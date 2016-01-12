@@ -13,9 +13,21 @@ $(function(){
     $("ul#catsays").prepend("<li>Leave me alone!</li>");
     $("ul#dogsays, ul#catsays").children("li").click(function() {
       $(this).remove();
+    });
   });
-});
 
+  $("span#picacat").click(function() {
+    $("h3").after("<img src='img/cat.jpg'>");
+  $("div.header").children("img").click(function() {
+    $(this).remove();
+    });
+  });
 
+  $("span#rolliedog").click(function() {
+    $("h3").after("<img src='img/dog.jpg'>");
+  $("div.header").children("img").click(function() {
+    $(this).remove();
+    });
+  });
 
 });
